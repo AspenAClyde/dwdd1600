@@ -220,27 +220,31 @@ font-size: .8rem;
     margin: 1rem 0 0 1vw;
     }
     
-
     table.sphynx-products {
-        width:100%;
+        width: 100%;
         border-collapse: collapse;
     }
-    table.sphynx-products th{
+    
+    table.sphynx-products th {
         background-color: #674636;
         color: white;
         padding: .5rem 2vw;
         text-align: left;
     }
+    
     table.sphynx-products td {
-    color: #674636;
-    padding: .4rem 2vw;
+        color: #674636;
+        padding: .4rem 2vw;
     }
+    
     table.sphynx-products tr:nth-child(odd) {
-    background-color: #f7f7f7;
+        background-color: #f7f7f7;
     }
+    
     table.sphynx-products tr:hover {
-        background-color: reba(84,105,31,0.2);
+        background-color: rgba(84, 105, 31, 0.2); /* Corrected rgba */
     }
+    
 
 /* footer stuff here */
 footer {
