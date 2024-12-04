@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="beach.css">
+
+<link rel="icon" type="image/x-icon" href="beach-photos/favicon.ico">
+
+        <title>Sunsets & Sights: Home</title>
+        <meta name="description" content="Your Next Adventure Begins">
+        <meta name="author" content="Aspen Clyde">
+    </head>
+    <body>
+        <!-- start of the page header -->
+        <header>
+        <img src="beach-photos/logo.png" alt="site logo" width="100"
+        height="103">
+ <div>
+        <h1>Sunsets & Sights</h1> 
+        <p> Your Next Adventure Begins Here </p>
+</div>
+        </header>
+    <!-- start the page navigation -->
+    <nav>
+            <ul>
+                <li><a href="index.html">Vacation Planning</a></li>
+                <li><a href="popular-destinations.html" >Popular Destinations</a></li>
+                <li><a href="package-deals.html">Package Deals</a></li> 
+              <li class="active"><a href="travel-form.html">Travel Form</a></li>
+              <li><a href="vacation-essentials.html">Vacation Essentials</a></li>
+              <li><a href="contact-us.html">Contact us</a></li>
+            </ul>
+    </nav>
+    
+    <!-- start the page main -->
+    <main>
+        <h1>Travel Inquiry Form</h1>
+        <form method="get" class="myform" action="thanks.html">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label> Please provide your full name:* 
+                    <input type="text" name="fname" required> 
+                </label>
+                <label> Please provide your mobile number:* 
+                    <input type="tel" name="phone" required placeholder="801-123-4567"> 
+                </label>
+                <label> Please provide your email:* 
+                    <input type="email" name="email" required placeholder="example@gmail.com"> 
+                </label>
+                <label> What is your preferred method of contact? 
+                    <input type="text" name="contact_method" required> 
+                </label>
+                <label> Do you have any specific travel restrictions or preferences? 
+                    <input type="text" name="preferences"> 
+                </label>
+            </fieldset>
+    
+            <fieldset>
+                <legend>Travel Details</legend>
+                <label>What type of trip are you planning?</label>
+                <label><input type="radio" name="trip_type" value="leisure"> Leisure</label>
+                <label><input type="radio" name="trip_type" value="business"> Business</label>
+                <label><input type="radio" name="trip_type" value="adventure"> Adventure</label>
+                <label><input type="radio" name="trip_type" value="romantic"> Romantic</label>
+                <label><input type="radio" name="trip_type" value="family"> Family</label>
+            </fieldset>
+    
+            <fieldset>
+                <legend>Destination Preference</legend>
+                <label>Do you have a preferred destination or region for your trip?</label>
+                <input type="text" name="destination" placeholder="e.g., Paris, Caribbean, etc.">
+            </fieldset>
+    
+            <fieldset>
+                <legend>Travel Dates</legend>
+                <label>What is your preferred departure date?</label>
+                <input type="date" name="departure_date">
+                <label>What is your preferred return date?</label>
+                <input type="date" name="return_date">
+            </fieldset>
+    
+            <fieldset>
+                <legend>Accommodation Preferences</legend>
+                <label>What type of accommodation are you interested in?</label>
+                <label><input type="checkbox" name="accommodation" value="hotel"> Hotel</label>
+                <label><input type="checkbox" name="accommodation" value="resort"> Resort</label>
+                <label><input type="checkbox" name="accommodation" value="hostel"> Hostel</label>
+                <label><input type="checkbox" name="accommodation" value="vacation rental"> Vacation rental</label>
+            </fieldset>
+    
+            <fieldset>
+                <legend>Budget & Travel Arrangements</legend>
+                <label>What is your estimated budget for the trip?</label>
+                <input type="text" name="budget" placeholder="e.g., $1500, $3000">
+                <label>Are you interested in additional services such as guided tours, transportation, etc.?</label>
+                <textarea name="services"></textarea>
+            </fieldset>
+    
+            <fieldset>
+                <legend>Additional Information</legend>
+                <label>Is there anything else we should know to help plan your trip?</label>
+                <textarea name="comments"></textarea>
+            </fieldset>
+    
+            <fieldset>
+                <legend>Travel Commitment</legend>
+                <label>Are you ready to book your trip with us?* 
+                    <select name="commitment">
+                        <option value="none">Please Select</option>
+                        <option value="yes">Yes, I’m ready to proceed!</option>
+                        <option value="no">No, I am just inquiring at this time.</option>
+                    </select>
+                </label>
+            </fieldset>
+    
+            <input type="submit" value="Send Travel Inquiry">
+        </form>
+    </main>
+    
+    
+    <!-- start the page footer -->
+    <footer>
+        <p>&copy; 2024 &bull; Aspen Clyde &bull; <a href="mailto:pixiefry4@gmail.com">Email Us</a></p>
+                </footer>
+        
+            </body>
+        </html>
